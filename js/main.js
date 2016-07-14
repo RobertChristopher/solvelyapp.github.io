@@ -1,23 +1,30 @@
 $(document).ready(function() {
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        $(".preview-top").remove()
+        $(".preview-section").show()
+      } else {
+        $(".preview-section").remove()
+      }
+    
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
         anchors:['firstPage', 'secondPage'],
-        navigation: false,
+        navigation: true,
         navigationPosition: 'right',
         navigationTooltips: ['firstSlide', 'secondSlide'],
-        showActiveTooltip: false,
+        showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
 
         //Scrolling
         css3: true,
-        scrollingSpeed: 700,
-        autoScrolling: true,
-        fitToSection: false,
+        scrollingSpeed: 500,
+        autoScrolling: false,
+        fitToSection: true,
         fitToSectionDelay: 1000,
-        scrollBar: false,
+        scrollBar: true,
         easing: 'easeInOutCubic',
         easingcss3: 'ease',
         loopBottom: false,
@@ -57,12 +64,6 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
-  if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    $(".preview-top").remove()
-    $(".preview-section").show()
-  } else {
-    $(".preview-section").remove()
-  }
 });
 
 
