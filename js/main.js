@@ -15,7 +15,9 @@ $(document).ready(function() {
 
 
     $(window).on('resize', function () {
-        window.location.reload()
+        if(!isMobile) {
+            window.location.reload()
+        }
     })
 
     $('#fullpage').fullpage({
