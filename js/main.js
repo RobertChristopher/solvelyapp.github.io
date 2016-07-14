@@ -88,6 +88,15 @@ $(document).ready(function() {
         $(".section").last().css("height",0)
     }
 
+
+    width = $(window).width()
+    if (width == 414) {
+        $("#container").css("padding-top","85px")
+    } else if (width == 375) {
+        $("#container").css("padding-top","75px")
+    } else if (width <= 435 && width >= 400) {
+        $("#container").css("padding-top","120px")
+    }
 });
 
 
