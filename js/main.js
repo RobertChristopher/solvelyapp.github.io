@@ -83,7 +83,10 @@ $(document).ready(function() {
     $(".display-section").css("padding-top", 0)
     $(".display-section").css("padding-bottom", 0)
 
+
     if(isMobile || mobile_size) {
+        $(".fp-tableCell").css("background-color", "white")
+
         $(".fp-tableCell").first().css("background-color", "#ecf0f1")
     } else {
         $(".fp-tableCell").last().css("height",0)
