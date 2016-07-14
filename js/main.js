@@ -5,15 +5,13 @@ $(document).ready(function() {
       } else {
         $(".preview-section").remove()
       }
-    
+
     $('#fullpage').fullpage({
         //Navigation
         menu: '#menu',
         lockAnchors: false,
-        anchors:['firstPage', 'secondPage'],
         navigation: true,
         navigationPosition: 'right',
-        navigationTooltips: ['firstSlide', 'secondSlide'],
         showActiveTooltip: true,
         slidesNavigation: true,
         slidesNavPosition: 'bottom',
@@ -64,6 +62,8 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
     });
+    $(".preview-section").css("padding-top", 0)
+    $(".preview-section").css("padding-bottom", 0)
 });
 
 

@@ -264,6 +264,12 @@ img {
     -o-transition: -o-transform 0.2s;
 }
 
+.no-zoom{
+        transition: none;
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+}
 #left,
 #right {
     position: relative;
