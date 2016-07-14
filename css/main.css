@@ -731,6 +731,9 @@ body.items #profile #items li.item:nth-of-type(even) {
         position: relative;
     }
 
+    .team-section {
+        display: block
+    }
 /*@media screen and (max-width: 920px) {*/
     /*body.items #profile #items {*/
         /*width: 100%*/

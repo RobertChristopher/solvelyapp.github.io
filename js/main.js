@@ -2,12 +2,21 @@ $(document).ready(function() {
 
     isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
-      if(isMobile) {
+    var windowWidth = window.screen.width < window.outerWidth ?
+                  window.screen.width : window.outerWidth;
+    var mobile_size = windowWidth < 500;
+
+      if(isMobile || mobile_size) {
         $(".preview-top").remove()
         $(".preview-section").show()
       } else {
         $(".preview-section").remove()
       }
+
+
+    $(window).on('resize', function () {
+        window.location.reload()
+    })
 
     $('#fullpage').fullpage({
         //Navigation
@@ -72,7 +81,7 @@ $(document).ready(function() {
     $(".display-section").css("padding-top", 0)
     $(".display-section").css("padding-bottom", 0)
 
-    if(isMobile) {
+    if(isMobile || mobile_size) {
         $(".fp-tableCell").first().css("background-color", "#ecf0f1")
     } else {
         $(".fp-tableCell").last().css("height",0)
