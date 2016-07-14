@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-    isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+    isMobile = /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
 
     var windowWidth = window.screen.width < window.outerWidth ?
                   window.screen.width : window.outerWidth;
