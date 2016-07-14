@@ -12,7 +12,7 @@
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
     -moz-box-sizing: border-box;
-    -webkit-box-sizing: border-box
+    -webkit-box-sizing: border-box;
 }
 html,
 body {
@@ -230,7 +230,7 @@ body.home_jobs .job:last-child {
 }
 
 #container {
-    /* padding-top: 50px; */
+    padding-top: 50px;
     text-align: center;
 }
 
@@ -278,6 +278,7 @@ img {
     overflow: hidden
 }
 #left {
+    background-color: #24212A;
     float: right;
 }
 .text-center {
@@ -296,6 +297,7 @@ img {
     margin: auto
 }
 #right {
+    background-color: #ecf0f1;
     float: left
 }
 #right .content {
@@ -726,7 +728,6 @@ body.items #profile #items li.item:nth-of-type(even) {
 }
     #footer {
         bottom: 0;
-        padding-top: 20%;
         position: relative;
     }
 

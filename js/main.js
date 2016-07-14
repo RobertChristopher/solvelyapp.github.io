@@ -1,5 +1,8 @@
 $(document).ready(function() {
-      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+
+    isMobile = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)
+
+      if(isMobile) {
         $(".preview-top").remove()
         $(".preview-section").show()
       } else {
@@ -44,7 +47,7 @@ $(document).ready(function() {
         //Design
         controlArrows: true,
         verticalCentered: true,
-        paddingTop: '3em',
+        paddingTop: '3',
         paddingBottom: '10px',
         fixedElements: '#header, .footer',
         responsiveWidth: 0,
@@ -55,15 +58,27 @@ $(document).ready(function() {
         slideSelector: '.slide',
 
         //events
-        onLeave: function(index, nextIndex, direction){},
+        onLeave: function(index, nextIndex, direction){
+        },
         afterLoad: function(anchorLink, index){},
         afterRender: function(){},
         afterResize: function(){},
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
-        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){}
+        onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex){
+        }
     });
     $(".preview-section").css("padding-top", 0)
     $(".preview-section").css("padding-bottom", 0)
+    $(".display-section").css("padding-top", 0)
+    $(".display-section").css("padding-bottom", 0)
+
+    if(isMobile) {
+        $(".fp-tableCell").first().css("background-color", "#ecf0f1")
+    } else {
+        $(".fp-tableCell").last().css("height",0)
+        $(".section").last().css("height",0)
+    }
+
 });
 
 
