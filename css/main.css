@@ -137,6 +137,50 @@ a.button.download .download {
     border-top: 1px solid #ddd;
     margin-top: 24px
 }
+body.home_jobs .job-links a:hover {
+    text-decoration: underline
+}
+body.home_jobs .divider {
+    border-top: 1px solid #ddd;
+    margin: 24px 0
+}
+body.home_jobs .job {
+    position: relative;
+    margin-bottom: 40px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #ddd
+}
+body.home_jobs .job h3 {
+    font-weight: 300;
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 24px;
+    margin: 18px 0 4px
+}
+body.home_jobs .job ul li {
+    margin-bottom: 8px;
+    color: #949494;
+    font-size: 16px;
+    font-weight: 300
+}
+body.home_jobs .job ul li span.disc {
+    display: inline-block;
+    background: #AA79DB;
+    border-radius: 50%;
+    margin: 0 8px 4px 0;
+    width: 6px;
+    height: 6px
+}
+body.home_jobs .job a.button {
+    position: absolute;
+    width: 100px;
+    top: -5px;
+    right: 0
+}
+body.home_jobs .job:last-child {
+    border-bottom: none;
+    padding-bottom: 0
+}
 #main {
     margin-bottom: 48px
 }
@@ -199,7 +243,7 @@ a, figure {
 }
 figcaption {
     color: rgba(0, 0, 0, 0.7);
-    font-size: 18px;
+    font-size: 12px;
     font-weight: 300;
     line-height: 32px;
 }
@@ -276,7 +320,7 @@ img {
     width: 240px;
     height: 56px;
     line-height: 56px;
-    font-size: 15px;
+    font-size: 14px
 }
 #right a.button.watch {
     width: auto;
@@ -364,7 +408,7 @@ img {
         padding: 64px 0
     }
     #left {
-        height: 628px
+        height: 125%
     }
     #right {
         padding-top: 10px;
@@ -389,7 +433,7 @@ img {
 }
 @media screen and (max-width: 330px) {
     #header .button.download {
-        width: 140px
+        width: 180px
     }
     #header .button.download .download {
         letter-spacing: 0.1px
