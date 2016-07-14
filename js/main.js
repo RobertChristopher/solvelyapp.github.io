@@ -87,7 +87,7 @@ $(document).ready(function() {
     if(isMobile || mobile_size) {
         $(".fp-tableCell").css("background-color", "white")
 
-        $(".fp-tableCell").first().css("background-color", "#ecf0f1")
+        // $(".fp-tableCell").first().css("background-color", "#ecf0f1")
     } else {
         $(".fp-tableCell").last().css("height",0)
         $(".section").last().css("height",0)
