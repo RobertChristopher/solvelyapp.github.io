@@ -296,11 +296,7 @@ img {
     left: 0;
     margin: auto
 }
-#right {
-
-    background-color: white;
-    float: left
-}
+#right {background-color: #e4e4e4;float: left;}
 #right .content {
     width: 410px;
     padding: 10px;
